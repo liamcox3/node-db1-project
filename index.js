@@ -8,6 +8,8 @@ server.listen(PORT, () => {
     console.log(`\n== API running on port ${PORT} ==\n`);
 });
 
+server.use(express.json());
+
 // database access using knex
 const db = require("./data/dbConfig");
 
